@@ -2,6 +2,7 @@ package com.ge.test.ireport.rest.viewer;
 
 import com.ge.test.ireport.model.ListResponse;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -21,9 +22,7 @@ public class List {
         return resp;
     }
     @GetMapping("/{id}")
-    public ListResponse getListById(String id) {
-
-        
+    public ListResponse getListById(@PathVariable String id) {
         return new ListResponse("7237723", "doctor bubo", "he is fine.");
     }
 }
