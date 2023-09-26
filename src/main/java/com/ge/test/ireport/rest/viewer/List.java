@@ -8,13 +8,13 @@ import org.springframework.web.bind.annotation.RestController;
 public class List {
 
     @GetMapping("/list")
-    public ListResponse getList() {
+    public ListResponse[] getList() {
 
-        return new ListResponse();
+        return new ListResponse[]{};
     }
     @GetMapping("/{id}")
-    public String getListById() {
+    public ListResponse getListById() {
 
-        return "OK";
+        return new ListResponse();
     }
 }
