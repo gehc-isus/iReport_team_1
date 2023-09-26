@@ -13,8 +13,9 @@ public class List {
         return new ListResponse[]{};
     }
     @GetMapping("/{id}")
-    public ListResponse getListById() {
+    public ListResponse getListById(String id) {
 
+        
         return new ListResponse();
     }
 }

@@ -1,4 +1,4 @@
-package com.ge.test.ireport;
+package com.ge.test.ireport.storage;
 
 import java.io.BufferedWriter;
 import java.io.BufferedReader;
