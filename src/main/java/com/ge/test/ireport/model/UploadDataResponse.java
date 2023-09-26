@@ -16,4 +16,8 @@ public class UploadDataResponse {
         return id;
     }
     public String validation;
+
+    public UploadDataResponse(String resp) {
+        validation = resp;
+    }
 }
