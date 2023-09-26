@@ -12,12 +12,18 @@ public class List {
     @GetMapping("/list")
     public ListResponse[] getList() {
 
-        return new ListResponse[]{};
+        ListResponse[] resp = new ListResponse[]{
+                new ListResponse("232323", "doctor Jim", "give him cigars"),
+                new ListResponse("7237723", "doctor bubo", "he is fine."),
+                new ListResponse("3432434", "doctor bobek", "he is not fine."),
+
+        };
+        return resp;
     }
     @GetMapping("/{id}")
     public ListResponse getListById(String id) {
 
         
-        return new ListResponse();
+        return new ListResponse("7237723", "doctor bubo", "he is fine.");
     }
 }

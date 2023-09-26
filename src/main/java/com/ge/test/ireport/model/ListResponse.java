@@ -16,4 +16,10 @@ public class ListResponse {
     public String medicalId;
     public String metadata;
     public String medicalReport;
+
+    public ListResponse(String medicalId, String metadata, String medicalReport) {
+        this.medicalId = medicalId;
+        this.metadata = metadata;
+        this.medicalReport = medicalReport;
+    }
 }
