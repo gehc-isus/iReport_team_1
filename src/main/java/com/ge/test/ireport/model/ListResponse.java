@@ -3,9 +3,7 @@ package com.ge.test.ireport.model;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 
-@Entity
 public class ListResponse {
-    @Id
     private Long id;
 
     public void setId(Long id) {
