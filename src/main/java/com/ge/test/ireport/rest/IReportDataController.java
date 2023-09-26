@@ -2,7 +2,8 @@ package com.ge.test.ireport.rest;
 
 import org.springframework.web.bind.annotation.*;
 
-@RestController("/report/")
+@RestController
+@RequestMapping("report")
 public class IReportDataController {
 
     @GetMapping("/list")
@@ -11,14 +12,14 @@ public class IReportDataController {
         return "reportList";
     }
 
-    @GetMapping("/{id}")
+    @GetMapping("/{reportId}")
     public String getReport(@PathVariable String reportId){
 
         return "report";
     }
 
-    @PostMapping("/{id}")
-    public String saveReport(@RequestParam String report){
+    @PostMapping("/{reportId}")
+    public String saveReport(@RequestParam String reportId){
 
         return "report created";
     }
